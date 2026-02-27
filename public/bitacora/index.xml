@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bitacora on santiagovallejo.com</title>
+    <link>http://localhost:1313/bitacora/</link>
+    <description>Recent content in Bitacora on santiagovallejo.com</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/bitacora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primer dia del proyecto</title>
+      <link>http://localhost:1313/bitacora/2026-02-27-primer-dia/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bitacora/2026-02-27-primer-dia/</guid>
+      <description>Arranque de mi web tipo bitacora enfocada en IA.</description>
+    </item>
+  </channel>
+</rss>

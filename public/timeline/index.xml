@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timeline on santiagovallejo.com</title>
+    <link>http://localhost:1313/timeline/</link>
+    <description>Recent content in Timeline on santiagovallejo.com</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/timeline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hitos</title>
+      <link>http://localhost:1313/timeline/hitos/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/timeline/hitos/</guid>
+      <description>Resumen de fechas clave en mi recorrido con IA.</description>
+    </item>
+  </channel>
+</rss>
