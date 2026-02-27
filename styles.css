@@ -1,0 +1,256 @@
+:root {
+  --bg: #f6f3ee;
+  --text: #181511;
+  --muted: #5a534b;
+  --card: rgba(255, 255, 255, 0.72);
+  --line: rgba(24, 21, 17, 0.12);
+  --accent: #d65a31;
+  --accent-2: #1f6f78;
+  --shadow: 0 20px 40px rgba(24, 21, 17, 0.14);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 8% 5%, #f5d9b9 0%, transparent 30%),
+    radial-gradient(circle at 90% 25%, #c2e4e0 0%, transparent 35%), var(--bg);
+  overflow-x: hidden;
+}
+
+.bg-shape {
+  position: fixed;
+  z-index: -1;
+  border-radius: 999px;
+  filter: blur(22px);
+  opacity: 0.5;
+}
+
+.bg-shape-a {
+  width: 260px;
+  height: 260px;
+  background: #e88a63;
+  top: 68%;
+  left: -90px;
+}
+
+.bg-shape-b {
+  width: 320px;
+  height: 320px;
+  background: #62a7b0;
+  top: -90px;
+  right: -110px;
+}
+
+.topbar {
+  width: min(1080px, 92%);
+  margin: 1.2rem auto 0;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.brand {
+  font-family: "Fraunces", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+main {
+  width: min(1080px, 92%);
+  margin: 2.5rem auto 3rem;
+  display: grid;
+  gap: 1.8rem;
+}
+
+.hero {
+  padding: 2.2rem;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.72)
+  );
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0.5rem;
+  font-size: clamp(2rem, 7vw, 3.8rem);
+  line-height: 1;
+}
+
+.lead {
+  margin-top: 1rem;
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.cta-row {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.72rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-ghost {
+  border-color: var(--line);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+section h2 {
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+}
+
+section p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.grid {
+  margin-top: 0.9rem;
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.project {
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.project h3 {
+  font-size: 1.2rem;
+}
+
+.project p {
+  margin: 0.6rem 0 0;
+}
+
+#contacto a {
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+footer {
+  width: min(1080px, 92%);
+  margin: 0 auto 1.8rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.reveal.visible {
+  animation: lift-in 0.65s ease forwards;
+}
+
+@keyframes lift-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    border-radius: 20px;
+    padding: 0.8rem;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  nav {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero,
+  .card {
+    padding: 1.2rem;
+  }
+}
