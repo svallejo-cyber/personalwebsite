@@ -13,18 +13,12 @@ if [[ ! -d "$TARGET_REPO/.git" ]]; then
   exit 1
 fi
 
-# Keep local build/temp files out of git.
-cat > "$TARGET_REPO/.gitignore" << 'EOF'
-.DS_Store
-.hugo_build.lock
-public/
-EOF
-
 # Sync site files into target repo.
 rsync -a --delete \
   --exclude '.git' \
   --exclude '.DS_Store' \
   --exclude '.hugo_build.lock' \
+  --exclude 'public' \
   --exclude 'public/' \
   "$SOURCE_DIR/" "$TARGET_REPO/"
 
