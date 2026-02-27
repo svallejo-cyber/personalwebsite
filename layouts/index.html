@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="book-page">
+  <h1>{{ .Site.Params.description }}</h1>
+  <div class="content">{{ .Content }}</div>
+
+  <section class="home-grid">
+    <a href="/bitacora/">Bitacora</a>
+    <a href="/proyectos/">Proyectos</a>
+    <a href="/ahora/">Ahora</a>
+    <a href="/timeline/">Timeline</a>
+  </section>
+</article>
+{{ end }}

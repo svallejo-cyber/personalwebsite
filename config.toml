@@ -1,0 +1,38 @@
+baseURL = "https://santiagovallejo.com/"
+languageCode = "es"
+title = "santiagovallejo.com"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 8
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[params]
+  author = "Santiago Vallejo"
+  description = "Bitacora de mi recorrido con la IA"
+
+[menu]
+  [[menu.main]]
+    name = "Inicio"
+    pageRef = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Bitacora"
+    pageRef = "/bitacora"
+    weight = 20
+  [[menu.main]]
+    name = "Proyectos"
+    pageRef = "/proyectos"
+    weight = 30
+  [[menu.main]]
+    name = "Ahora"
+    pageRef = "/ahora"
+    weight = 40
+  [[menu.main]]
+    name = "Timeline"
+    pageRef = "/timeline"
+    weight = 50
